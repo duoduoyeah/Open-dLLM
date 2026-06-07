@@ -11,3 +11,24 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+# Trace utilities for model analysis
+from .trace_utils import (
+    LayerTokenData,
+    GenerationStep,
+    GenerationTrace,
+    LayerTokenHook,
+    layer_token_hook,
+    decode,
+    capture_layer_activations,
+)
+
+__all__ = [
+    "LayerTokenData",
+    "GenerationStep", 
+    "GenerationTrace",
+    "LayerTokenHook",
+    "layer_token_hook",
+    "decode",
+    "capture_layer_activations",
+]
